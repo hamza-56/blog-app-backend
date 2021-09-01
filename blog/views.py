@@ -1,7 +1,9 @@
-from rest_framework import viewsets, permissions
-from .serializers import PostSerializer
+from rest_framework import permissions, viewsets
+
 from .models import Post
 from .permissions import IsAuthorOrReadOnly
+from .serializers import PostSerializer
+
 
 class PostViewSet(viewsets.ModelViewSet):
     serializer_class = PostSerializer
