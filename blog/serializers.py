@@ -13,9 +13,9 @@ class PostAuthorSerialzer(serializers.ModelSerializer):
 
 
 class PostSerializer(serializers.ModelSerializer):
-    author = PostAuthorSerialzer()
+    author = PostAuthorSerialzer(read_only=True)
 
     class Meta:
         model = Post
         fields = '__all__'
-        read_only_fields = ('author', )
+        read_only_fields = ('slug', )

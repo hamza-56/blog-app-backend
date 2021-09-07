@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
 import django_heroku
 from datetime import timedelta
 
@@ -82,8 +81,7 @@ TEMPLATES = [{
 }]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'https://fathomless-reaches-79395.herokuapp.com'
+    'http://localhost:3000', 'https://fathomless-reaches-79395.herokuapp.com'
 ]
 
 WSGI_APPLICATION = 'blog-app.wsgi.application'
